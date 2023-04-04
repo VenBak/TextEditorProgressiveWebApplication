@@ -2,18 +2,9 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-
+The purpose of this project was to try and make a web application which can be downloaded and used offline. This was done using Service Workers, a Manifest.json file and webpack. The motivation behind this project was to understand caching and how web applications can be used offline which is a very important factor in nowadays web applications since certain individuals might be restricted to good internet. The application is a simple text editor but the focus was layed more on implementing the offline feature.
 
 ## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,47 +13,23 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+If you wish to install this project you can either fork or clone the repository. After you have done so make sure to install all of the dependencies by opening the repository inside of your GitBash or Terminal and run the command, `npm run install` which is a script which will install the dependencies for all 3 package.json files since there is one inside the client, server and root folder. After doing this make sure to try `npm i` just to make sure that you also installed concurrently inside of your root folder.
+
+Then run the command `npm run start:dev` which will minimize the javascript and html file and run a server on the port 3000. It is possible that your port might already be in use and if it is the case you should look for the port which webpack has alternatively chosen which is likely 8080 but given in the terminal. Here's an example URL: http://localhost:3000/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+If you wish to use the project you can use this deployed version: https://jatetest123.herokuapp.com/
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+If you wish to run the project inside of your local machine make sure to have followed all of the steps inside of the installation guidelines digilently.
 
-![alt text](assets/images/screenshot.png)
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
+Here is what the application should look like:
 
 
-The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+![static](./asset/default.png)
 
-## Badges
+Here's what installing the application for offline capabilities would look like:
 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+![installation](./asset/installation.png)
 
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here
+![installed](./asset/installed.png)

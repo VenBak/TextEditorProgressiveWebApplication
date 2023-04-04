@@ -34,9 +34,9 @@ module.exports = () => {
         inject: true,
         name: 'Just Another Text Editor',
         short_name: 'JATE',
-        description: 'Text editor progressive web application, available for download and offline capabilities.',
-        background_color: '#225ca3',
-        theme_color: '#225ca3',
+        description: 'Downloadable Web App Text Editor',
+        background_color: '#264653',
+        theme_color: '#264653',
         start_url: './',
         publicPath: './',
         icons: [
